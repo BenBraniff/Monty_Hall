@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: monty_hall_app/Monty_Hall
+        working-directory: monty_hall_app
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -34,7 +34,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'monty_hall_app/Monty_Hall/build'
+          path: 'monty_hall_app/build'
 
       - name: Deploy to GitHub Pages
         id: deployment
